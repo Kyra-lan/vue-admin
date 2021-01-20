@@ -28,19 +28,19 @@ module.exports = {
     productionSourceMap: false,
     // css相关配置
     css: {
-        // 是否使用css分离插件 ExtractTextPlugin
-        extract: true,
-        // 开启 css source maps?
-        sourceMap: false,
-        // css预设器配置项
+    //     // 是否使用css分离插件 ExtractTextPlugin
+    //     extract: true,
+    //     // 开启 css source maps?
+    //     sourceMap: false,
+    //     // css预设器配置项
         loaderOptions: {
             sass: {
                 prependData: `@import "./src/styles/main.scss";`
             }
         },
-        // 启用 css modules for all css / pre-processor files.
-        // modules: false
-        requireModuleExtension: false
+    //     // 启用 css modules for all css / pre-processor files.
+    //     // modules: false
+    //     requireModuleExtension: false
     },
     // use thread-loader for babel & TS in production build
     // enabled by default if the machine has more than 1 cores
